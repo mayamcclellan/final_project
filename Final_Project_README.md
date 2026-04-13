@@ -136,8 +136,8 @@ In my initial draft, I ran into several issues while trying to implement Merge S
 
 
 
-!\[Draft Code](draft\_1)
-!\[Draft Code](draft\_2)
+![Draft Code](draft\_1)
+![Draft Code](draft\_2)
 
 
 
