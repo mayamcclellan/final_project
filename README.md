@@ -16,7 +16,8 @@ I chose Merge Sort because it’s a clear and efficient way to sort shuttle stop
 
 <img width="2230" height="1198" alt="Final code #2" src="https://github.com/user-attachments/assets/917307ee-1ed8-492b-b94c-54f95d767df8" />
 
-<img width="2239" height="1201" alt="hugging face test" src="https://github.com/user-attachments/assets/99fd23cf-64fa-4e8e-bade-9fd3fe750f30" />
+<img width="2228" height="1205" alt="image" src="https://github.com/user-attachments/assets/40fb790b-0d57-41f0-ba71-1ae05a62ddf8" />
+
 
 
 ## Problem Breakdown \& Computational Thinking
