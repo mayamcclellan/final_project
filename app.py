@@ -5,7 +5,7 @@ def generate_stops():
     return [
         {"name": "Stop A", "crowd": 12},
         {"name": "Stop B", "crowd": 5},
-        {"name": "Stop C", "crowd": "20"},  # this is a string right now, I’ll fix it later
+        {"name": "Stop C", "crowd": 20},
         {"name": "Stop D", "crowd": 8}
     ]
 
