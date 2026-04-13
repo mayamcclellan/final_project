@@ -1,6 +1,6 @@
 import gradio as gr
 
-# making some sample shuttle stops with crowd numbers
+# this is just some sample data for shuttle stops
 def generate_stops():
     return [
         {"name": "Stop A", "crowd": 12},
@@ -10,35 +10,36 @@ def generate_stops():
     ]
 
 # this is my merge sort function
-# it keeps splitting the list until it can't split anymore
+# it keeps splitting the list until each part is really small (1 item)
 def merge_sort(stops):
 
-    # if there's only 1 item, it's already sorted
+    # if there is only 1 item, I just return it because it's already sorted
     if len(stops) <= 1:
         return stops
 
-    # find the middle so I can split the list into 2 halves
+    # I find the middle so I can split the list into two halves
     mid = len(stops) // 2
 
-    # sorting left side
+    # I sort the left side first
     left = merge_sort(stops[:mid])
 
-    # sorting right side
+    # then I sort the right side
     right = merge_sort(stops[mid:])
 
-    # now I combine them back together in order
+    # then I combine both sorted halves together
     return merge(left, right)
 
-# this part actually puts the two sorted lists together
+# this part merges the two sorted lists together
 def merge(left, right):
     result = []
     i = 0
     j = 0
 
-    # comparing items from both sides one by one
+    # I compare items from both lists one by one
     while i < len(left) and j < len(right):
 
-        # checking which crowd number is smaller
+        # I compare crowd numbers to decide which one comes first
+        # I made it so higher crowd comes first
         if left[i]["crowd"] > right[j]["crowd"]:
             result.append(left[i])
             i += 1
@@ -46,35 +47,34 @@ def merge(left, right):
             result.append(right[j])
             j += 1
 
-    # if anything is left over, just add it in
+    # if there is anything left in the left list, I add it
     result.extend(left[i:])
+
+    # if there is anything left in the right list, I add it
     result.extend(right[j:])
 
     return result
 
-# this is where I run everything
+# this is where I run everything for the app
 def run_sort():
 
-    # get the fake shuttle stop data
+    # I get the sample shuttle stop data
     data = generate_stops()
 
-    # i saw some values were strings so i converted everything to int
-    for stop in data:
-        stop["crowd"] = int(stop["crowd"])
-
-    # now I sort it using merge sort
+    # I sort it using my merge sort function
     sorted_data = merge_sort(data)
 
-    # just making it look nice for output
-    output = ""
+    # I format the output so it looks clean in the app
+    output = "Ranked Shuttle Stops (by crowd size)\n\n"
     for s in sorted_data:
-        output += f"{s['name']} {s['crowd']}\n"
+        output += f"{s['name']} → Crowd: {s['crowd']}\n"
 
     return output
 
-# this makes the simple web app
+# this creates the actual Gradio app
 gr.Interface(
     fn=run_sort,
     inputs=[],
-    outputs="text"
+    outputs="text",
+    title= "Shuttle Stop Crowd Ranking Simulator"
 ).launch()
