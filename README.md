@@ -156,7 +156,7 @@ Inputs are sorted backwards
 
 
 
-I wrote most of the code, but I had some difficulties so I used AI Level 4 to help me fix the errors in my code.
+I wrote most of the code, but I had some difficulties so I used AI Level 4 to help me fix the errors in my code. I also used AI to ask questions and clarify things I was struggling with.
 
 
 
