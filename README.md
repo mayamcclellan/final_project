@@ -11,7 +11,7 @@ I chose Merge Sort because it’s a clear and efficient way to sort shuttle stop
 ## Demo video/gif/screenshot of test
 
 
-
+<img width="2236" height="1204" alt="draft_2" src="https://github.com/user-attachments/assets/4cb8daa3-fe6c-4fe3-a702-eed9d154a8be" />
 
 
 
@@ -134,10 +134,6 @@ End
 
 In my initial draft, I ran into several issues while trying to implement Merge Sort. I made mistakes like calculating the middle index incorrectly, skipping elements during the merge step, and not handling all remaining values when combining lists. I also had a problem where one of the crowd counts was stored as a string instead of a number, which caused errors during comparisons. Because of these issues, the sorting either gave incorrect results or didn’t work at all. I fixed these problems step by step with the assistance of ChatGPT, which helped me better understand how Merge Sort works and how to debug my code.
 
-
-
-![Draft Code](draft\_1)
-![Draft Code](draft\_2)
 
 
 
