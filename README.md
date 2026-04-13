@@ -135,13 +135,19 @@ End
 
 In my initial draft, I ran into several issues while trying to implement Merge Sort. I made mistakes like calculating the middle index incorrectly, skipping elements during the merge step, and not handling all remaining values when combining lists. I also had a problem where one of the crowd counts was stored as a string instead of a number, which caused errors during comparisons. Because of these issues, the sorting either gave incorrect results or didn’t work at all. I fixed these problems step by step with the assistance of ChatGPT, which helped me better understand how Merge Sort works and how to debug my code.
 
-### Draft Code
+### Draft Code:
 <img width="2231" height="1207" alt="draft_1" src="https://github.com/user-attachments/assets/98753de7-0f20-4bb6-9a0d-3dd97a1f3714" />
 
 <img width="2236" height="1204" alt="draft_2" src="https://github.com/user-attachments/assets/4cb8daa3-fe6c-4fe3-a702-eed9d154a8be" />
 
-### Edge Case Test
+### Edge Case Test:
 
+Only one input
+<img width="2230" height="1202" alt="edge case" src="https://github.com/user-attachments/assets/79d6ec6f-089d-496a-8d6a-d7ebc96d921f" />
+
+Inputs are sorted backwards
+<img width="2231" height="1197" alt="edge case #2 (1)" src="https://github.com/user-attachments/assets/fa33ac59-71b4-46cd-9a82-8f71bcde6b52" />
+<img width="2234" height="1202" alt="edge case #2 (2)" src="https://github.com/user-attachments/assets/2c98ad5e-e39e-4279-812d-61d6ba42c955" />
 
 
 ## Author \& AI Acknowledgment
